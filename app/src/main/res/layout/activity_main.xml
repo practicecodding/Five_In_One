@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:id="@+id/mainLayout"
+    >
+
+    <!--  Toolbar Start  -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/custom_toolbar"
+        >
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_marginTop="24dp"
+            >
+            <TextView
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TextToSpeech &amp;  AlertDiolog"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textStyle="bold|italic"
+                android:textSize="25sp"
+                />
+        </androidx.appcompat.widget.Toolbar>
+
+    </LinearLayout>
+    <!--  Toolbar End  -->
+
+    <LinearLayout
+        android:id="@+id/playTune"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:theme="@style/ThemeOverlay.AppTheme.TextInputEditText.Outlined"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:hint="@string/app_name"
+            app:boxStrokeColor="#CDDC39"
+            app:hintTextColor="#CDDC39"
+            app:endIconMode="clear_text"
+            app:endIconTint="#CDDC39"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:text="Button"
+            android:textAllCaps="true"
+            android:enabled="false"
+            android:background="@drawable/custom_button"
+            android:textColor="@drawable/button_text_color"
+            />
+
+
+
+    </LinearLayout>
+
+</LinearLayout>
