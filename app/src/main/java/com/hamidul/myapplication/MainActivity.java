@@ -52,17 +52,6 @@ public class MainActivity extends AppCompatActivity {
         broadcastReceiver = new ConnectionReceiver();
         registerNetwork();
 
-        if (mediaPlayer!=null) mediaPlayer.release();
-
-        mediaPlayer = new MediaPlayer();
-        try {
-            mediaPlayer.setDataSource("https://smhamidulcodding.000webhostapp.com/mp3/Alone_Sad_Ringtone.mp3");
-            mediaPlayer.prepare();
-            mediaPlayer.start();
-        } catch (IOException e) {
-            throw new RuntimeException(e);
-        }
-
         editText = findViewById(R.id.editText);
         button = findViewById(R.id.button);
         toolbar = findViewById(R.id.toolbar);
@@ -210,3 +199,5 @@ public class MainActivity extends AppCompatActivity {
 
 
 }//*************************************************************************************************************
+
+//test
